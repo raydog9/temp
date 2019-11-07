@@ -9,27 +9,23 @@
     </head>
 
    <body>
-        <button id="but1"> fun1 </button>          
-          
-          <div class="container1"> 
-            <p id="po1"> </p>
-            <p id="po2"> </p>
-            <p id="po3"> </p>
-          </div>
-
-     <div class="container">
- 
-        <div id="bo1"> one  </div>
-        <div id="bo2">two </div>
-        <div id="bo3">three</div>
-        <div id="bo4"> four</div>
-        <div id="bo5">five</div>
-        <div id="bo6"> six</div>
-        <div id="bo7"> seven</div>
-        <div id="bo8">eight</div>
-        <div id="bo9"> nine</div>
+      <div>
+          Enter only numbers with a Decimal value: 
+          <input type="text" id="tbNumbers" value=""
+              onkeypress="javascript:return isNumber(event)" />
       </div>
-
   </body>
-
+  
+  <script>
+      // WRITE THE VALIDATION SCRIPT.
+      function isNumber(evt) {
+          var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+          if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+              return false;
+  
+          return true;
+      }    
+  </script>
   </html>
+        
+ 
