@@ -10,10 +10,24 @@
 
 
    <body>
-       <div> id="bo1"> </div>
+      <form id="myForm">
+          First name: <input type="text"><br>
+          Last name: <input type="text"><br><br>
+          <input type="button" onclick="myFunction()" value="Reset form">
+        </form>
+        
+        <script>
+        function myFunction() {
+          document.getElementById("myForm").reset();
+        }
+        </script>
+ 
+      <div class="container">              
+       <div id="bo1"> </div>
         <div id="bo2"> </div>
         <div id="bo3"> </div>
-    <p>be careful</p> 
+        </div>
+    <p id="po1"> </p> 
     </body> 
   </html>
         

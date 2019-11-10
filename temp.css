@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(192, 192, 235);
+    background-color: rgb(200,100,200);
 }
 .container1{
     display:grid;
@@ -24,6 +24,10 @@ body {
 }
 button {
     width: 50px; 
-    height: 20px;
+    height: 40px;
+}
+#in1 {
+    width: 100px; 
+    height:40px;
 }
  
