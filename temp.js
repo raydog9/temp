@@ -9,7 +9,7 @@
 
  function fun1() {
      var rand=Math.floor(Math.random() * 5);
-     bo2.innerHTML=rand;
+  
      a=rand;
       
        switch (a) {
@@ -32,13 +32,19 @@
                 b="five";
                 break;
        }
-             
-        bo1.innerHTML=a + b;
-        bo2.innerHTML=b;
-        console.log(a + b);
-         }
+       bo1.innerHTML=a;
+       bo2.innerHTML=b;
+
+                return b;
+     
+
+
+        }
+ 
+
 
 function fun2() {
-    console.log(a);
-    bo3.innerHTML=b;
+    bo3.innerHTML="ray";
+    console.log(a + b);
+
 }
