@@ -8,43 +8,33 @@
  bu2.addEventListener("click",fun2);
 
  function fun1() {
-     var rand=Math.floor(Math.random() * 5);
-  
-     a=rand;
-      
-       switch (a) {
-           case 0:
-               b="zero";
-               break;
-            case 1:
-                b="one";
-                break;
-            case 2:
-                b="two";
-                break;
-            case 3:
-                b="three";
-                break;
-            case 4:
-                b="four";
-                break;
-            case 5:
-                b="five";
-                break;
-       }
-       bo1.innerHTML=a;
-       bo2.innerHTML=b;
-
-                return b;
+     var rand=Math.floor(Math.random() * 30);
      
 
+     a=rand;
+      
+       switch (true) {
+           case a<10:
+               b="ten";
+               break;
+            case a<20:
+                b="twenty";
+                break;
+            case a<30:
+                b="thirty";
+                break;
 
-        }
- 
+       }
+        bo1.innerHTML=a
+        bo2.innerHTML=b;
+
+       return b;
+}
+
 
 
 function fun2() {
-    bo3.innerHTML="ray";
-    console.log(a + b);
-
+    bo1.innerHTML="";
+    bo2.innerHTML="";
+  
 }
