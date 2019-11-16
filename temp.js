@@ -8,28 +8,31 @@
  bu2.addEventListener("click",fun2);
 
  function fun1() {
-     var rand=Math.floor(Math.random() * 30);
-     
+     var rand=Math.floor(Math.random() * 40);
+        a=rand;
 
-     a=rand;
-      
-       switch (true) {
-           case a<10:
-               b="ten";
-               break;
-            case a<20:
-                b="twenty";
-                break;
-            case a<30:
-                b="thirty";
-                break;
+    if (a>0 || a<10) {
+        b="ten";
+        return b;
+    }
+    else if (a>10 || a<20) {
+         b="twenty";
+         return b;
+    }
+    else {
+        b="thirty";
+    bo1.innerHTML=a
+    bo2.innerHTML=b;
+}
+bo1.innerHTML=a
+bo2.innerHTML=b;
+
+
+
+
+ 
 
        }
-        bo1.innerHTML=a
-        bo2.innerHTML=b;
-
-       return b;
-}
 
 
 
