@@ -11,30 +11,19 @@
      var rand=Math.floor(Math.random() * 40);
         a=rand;
 
-    if (a>0 || a<10) {
-        b="ten";
-        return b;
-    }
-    else if (a>10 || a<20) {
-         b="twenty";
-         return b;
-    }
-    else {
-        b="thirty";
-    bo1.innerHTML=a
-    bo2.innerHTML=b;
-}
-bo1.innerHTML=a
-bo2.innerHTML=b;
+    if(a>=0 && a<=20) {
+        b="under";
+      }
+    else if (a>20 && a<40) {
+         b="over";
+     }
 
+     bo1.innerHTML=a;
+     bo2.innerHTML=b;
+  
+     return b;
 
-
-
- 
-
-       }
-
-
+  }
 
 function fun2() {
     bo1.innerHTML="";
