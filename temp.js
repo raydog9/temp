@@ -21,7 +21,7 @@
         a="wrong";
     }
     bo3.innerHTML=a;
-
+ }
  function fun2() {
     bo1.innerHTML="";
     bo2.innerHTML="";
