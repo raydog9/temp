@@ -2,42 +2,36 @@
  var bo1=document.getElementById("bo1");
  var bo2=document.getElementById("bo2");
  var bo3=document.getElementById("bo3");
+ var bo4=document.getElementById("bo4");
 
- 
- bu1.addEventListener("click",fun1);
+ inp1.addEventListener("input",fun1);
+ inp2.addEventListener("input",fun1);
  bu2.addEventListener("click",fun2);
 
  function fun1() {
-     var rand=Math.floor(Math.random() * 40);
-        a=rand;
-
-    if (a>0 || a<10) {
-        b="ten";
-        return b;
-    }
-    else if (a>10 || a<20) {
-         b="twenty";
-         return b;
+    one=inp1.value;
+    two=inp2.value;
+        var rand=Math.floor(Math.random() *10);
+        bo1.innerHTML=one;
+        bo2.innerHTML=rand;
+    if (rand == one) {
+        a="right";
     }
     else {
-        b="thirty";
-    bo1.innerHTML=a
-    bo2.innerHTML=b;
+        a="wrong";
+    }
+    bo3.innerHTML=a;
+
+
+
+
+
 }
-bo1.innerHTML=a
-bo2.innerHTML=b;
-
-
-
-
- 
-
-       }
-
-
 
 function fun2() {
     bo1.innerHTML="";
     bo2.innerHTML="";
-  
+    inp1.value="";
+
+
 }
