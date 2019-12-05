@@ -6,7 +6,7 @@
 
  inp1.addEventListener("input",fun1);
  inp2.addEventListener("input",fun1);
- bu2.addEventListener("click",fun2);
+ bu1.addEventListener("click",fun2);
 
  function fun1() {
     one=inp1.value;
@@ -21,11 +21,14 @@
         a="wrong";
     }
     bo3.innerHTML=a;
+    return;
  }
  function fun2() {
     bo1.innerHTML="";
     bo2.innerHTML="";
+    bo3.innerHTML="";
     inp1.value="";
-
+    inp2.value="";   
+   return;
 
 }
