@@ -1,3 +1,4 @@
+
  var a,b,c,d,e,m,n,o,r,s,t,x=50,arry=[],may=[],ray=[];
  
  function setup() {
@@ -15,6 +16,7 @@
      fill(00,100,100);
      background(218,160,220);
      ellipse(mov.x,mov.y,mov.mid,rand);
+
 
    }
  function mousePressed() {
