@@ -7,14 +7,14 @@
  }
  function draw() {
     var mov = {
-        x:Math.floor(Math.random()*1000),
+        x:Math.floor(Math.random()*1200),
         y:Math.floor(Math.random()*600),
-        mid:Math.floor(Math.random()*500)
-    };
+        mid:50
+    }
    
      var rand=Math.floor(Math.random()*100);
-     fill(00,100,100);
-     background(218,160,220);
+     fill(0,0,rand);
+     background(218,rand,200);
      ellipse(mov.x,mov.y,mov.mid,rand);
 
 
