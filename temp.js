@@ -1,33 +1,36 @@
+var a,b,c,d,e,m,n,o,r,s,t,x,arry=[],may=[],ray=[],say=[];
 
- var a,b,c,d,e,m,n,o,r,s,t,x=50,arry=[],may=[],ray=[];
- 
- function setup() {
-     createCanvas(1400,600);
-     background(218,160,220);
- }
- function draw() {
-    var mov = {
-        x:Math.floor(Math.random()*1200),
-        y:Math.floor(Math.random()*600),
-        mid:Math.floor(Math.random() *600),
-        colr:Math.floor(Math.random() *255),
-        colg:Math.floor(Math.random() *255),
-        colb:Math.floor(Math.random() *255)
-    }
-    var mov1 = {
-      x:Math.floor(Math.random()*(1200-800) +800),
-      y:Math.floor(Math.random()*600),
-      mid:Math.floor(Math.random() * 100)
-    }
+const mov = {
+    x:Math.floor(Math.random() *1000),
+    y:Math.floor(Math.random() *400),
+    mid:Math.floor(Math.random() *100),
+    end:Math.floor(Math.random() *100)
+}
+
+function setup() {
     
-   
-     var rand=Math.floor(Math.random()*255);
-     fill(mov.colr,mov.colg,mov.colb);
-      ellipse(mov.x,mov.y,mov.mid,rand);
-      ellipse(mov1.x,mov1.y,mov1.mid,rand);
+    createCanvas(1000,450);
+    background(200,100,218);
 
 
-   }
- function mousePressed() {
-    background(218,160,220);
-  }
+}
+
+function draw() {
+    const mov = {
+        x:Math.floor(Math.random() *1000),
+        y:Math.floor(Math.random() *400),
+        mid:Math.floor(Math.random() *10),
+        end:Math.floor(Math.random() *100)
+    }
+
+      background(210,0,200);  
+     fill(10,100,210);
+      rect(500, 300, 100,100,100);
+       quad(mouseX, mouseY, 300, 50, 69, 50, 50, 300);
+    }
+
+function mousePressed() {
+    background(200,100,218);
+
+
+}
