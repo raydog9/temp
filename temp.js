@@ -22,13 +22,16 @@ function draw() {
         mid:Math.floor(Math.random() *10),
         end:Math.floor(Math.random() *100)
     }
-
-      background(210,0,200);  
-     fill(10,100,210);
-      rect(500, 300, 100,100,100);
-       quad(mouseX, mouseY, 300, 50, 69, 50, 50, 300);
+    const mov1 = {
+        r:Math.floor(Math.random() * (255-200)-200),
+        g:Math.floor(Math.random() *255),
+        b:Math.floor(Math.random() *255)
     }
 
+      fill(100,0,100);
+      rect(mouseX, mouseY,100,100,20);
+}
+ 
 function mousePressed() {
     background(200,100,218);
 
