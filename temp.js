@@ -20,15 +20,19 @@ function draw() {
         x:Math.floor(Math.random() *1000),
         y:Math.floor(Math.random() *400),
         mid:Math.floor(Math.random() *10),
-        end:Math.floor(Math.random() *100)
-    }
+        end:Math.floor(Math.random() *100),
+        co1:Math.floor(Math.random()*255),
+        co2:Math.floor(Math.random () * 255),
+        co3:Math.floor(Math.random () * 255)
+
+    };
     const mov1 = {
         r:Math.floor(Math.random() * (255-200)-200),
         g:Math.floor(Math.random() *255),
         b:Math.floor(Math.random() *255)
     }
 
-      fill(100,0,100);
+      fill(mov.co3,mov.co1,mov.co2);
       rect(mouseX, mouseY,100,100,20);
 }
  
